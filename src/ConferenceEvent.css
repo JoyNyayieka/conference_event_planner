@@ -255,7 +255,8 @@
     padding: 20px 20px;
     background-color:#133b6a;
     color: white;
-    width: 100vw;
+    width: 100%;
+    box-sizing: border-box;
   }
   
   .company_logo {
@@ -265,12 +266,12 @@
   }
   .nav_links{
     display: flex;
-    gap: 170px;
+    gap: 30px;
   }
   .left_navbar{
-    width: 60vw;
+    align-items:center;
     display: flex;
-    gap: 180px;
+    gap: 40px;
   
   }
   .nav_links a {
@@ -279,6 +280,7 @@
     margin-right: 20px;
     transition: all 0.3s ease;
     font-size: 25px;
+    white-space: nowrap;
   }
   
   .nav_links a:hover {
@@ -286,7 +288,7 @@
   }
   .button_container{
     /* background-color: red; */
-    width:200px ;
+    flex-shrink: 0;
     display: flex;
     gap: 20px;
   }
@@ -299,14 +301,18 @@
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease;
+    white-space: nowrap;
     /* background-color: transparent; */
   }
   
   
   .navbar_event_conference{
     position: fixed;
-    top: 1px;
+    top: 0;
+    left: 0;
+    right: 0;
     z-index: 99;
+    width: 100%;
   }
   .btn-disabled {
     opacity: 0.5; /* Reduce opacity to visually indicate disabled state */
